@@ -1,7 +1,7 @@
 body {
-	background: rgb(0, 0, 0);
+	background: #1a1a1a ;
 	height: 300px;
-	margin: 0;
+	margin: 0px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -15,13 +15,29 @@ h1 {
 }
 
 .battle {
-	background: #eee;
-	width: 410px;
-	height: 325px;
+	width: 400px;
+	height: 300px;
 	border-radius: 5px;
 	box-shadow: 1px 1px 5px rgb(70, 14, 14);
 	transition: all 1s ease-in-out;
 }
+
+.battle:nth-of-type(1) {
+    background-color: #6592CF;
+}
+
+.battle:nth-of-type(2) {
+    background-color: #62306D;
+}
+
+.battle:nth-of-type(3) {
+    background-color: #191210;
+}
+
+.battle:nth-of-type(4) {
+    background-color: #F5D6B4;
+}
+
 
 .battle:hover{
 	transform: scale(1.2);
@@ -44,5 +60,295 @@ h1 {
 }
 
 .battle__name {
-	text-align: center;
+    text-align: center;
+}
+
+.battle:nth-of-type(3) .battle__name {
+    color: #808080;
+}
+
+.fork {
+    width: 140px;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    z-index: 0;
+}
+.stick1 {
+    width: 20px;
+    height: 120px;
+    border-radius: 10px;
+    float: left;
+    margin-right: -1px;
+    margin: 0px;
+    border: 0;
+    background: #060F55;
+    }
+.stick2 {
+    width: 20px;
+    height: 110px;
+    border-radius: 10px;
+    float: left;
+    margin-right: -1px;
+    margin: 0px;
+    border: 0;
+    background: #6592CF;
+}
+.spoon {
+    width: 140px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    z-index: -1;
+    background: #060F55;
+}
+
+.handle {
+    margin: 0 auto;
+    margin-top: -5px;
+    float: none;
+    clip-path: inset(0 0 69% 0);
+    border-radius: 0px;
+}
+
+
+.circles {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.mainstick {
+    width: 100px;
+    height: 200px;
+    background: #F7EC7D;
+    border-radius: 50px;
+    margin-left: 100px;
+}
+.bottom {
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: -50px;
+    clip-path: inset(0 0 45.5% 0);
+    background: #F7EC7D;
+}
+.leftcircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+    background: #AA445F;
+}
+.rightcircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 200px;
+    margin-top: -100px;
+    position: relative;
+    z-index: 2;
+    background: #AA445F;
+}
+.leftsmall {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 3;
+    margin-top: -80px;
+    background: #E38F66;
+}
+.rightsmall {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-left: 220px;
+    position: absolute;
+    z-index: 3;
+    margin-top: -80px;
+    background: #E38F66;
+}
+.topcircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 100px;
+    margin-top: -300px;
+    z-index: 3;
+    background: #E38F66;
+}
+.smallcircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    margin-top: -80px;
+    margin-left: 120px;
+    background: #AA445F;
+}
+
+.holder {
+    width: 300px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 80px;
+    
+}
+.bublick {
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+    margin-left: 80px;
+    background: #ECA03D;
+}
+.brownbublick {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #191210;
+    margin: 0 auto;
+    margin-top: -120px;
+}
+.paste {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: #84271C;
+    margin: 0 auto;
+    margin-top: -75px;
+}
+.lefthalfcircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #ECA03D;
+    margin-top: -75px;
+    position: relative;
+    clip-path: inset(50% 0 0 0);
+}
+.righthalfcircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #ECA03D;
+    margin-top: -100px;
+    margin-left: 200px;
+    position: relative;
+    clip-path: inset(0 0 50% 0);
+}
+.rightsmallcircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #191210;
+    margin-top: -80px;
+    margin-left: 220px;
+    position: absolute;
+    z-index: 2;
+}
+.leftsmallcircle {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background: #191210;
+    margin-top: -80px;
+    margin-left: 20px;
+    position: absolute;
+    z-index: 2;
+}
+
+.hlder {
+    width: 260px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: #F5D6B4;
+    position: relative;
+}
+.middle {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-left: 80px;
+    clip-path: inset(0 0 49% 0);
+    position: absolute;
+    background: #D86F45;
+}
+.middlecircle {
+    width: 60px;
+    height: 60px;
+    background: #F5D6B4;
+    border-radius: 100%;
+    position: relative;;
+    clip-path: inset(0 0 45% 0);
+    top: -40%;
+    left: 38%;
+}
+.back {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    left: -1;
+    clip-path: inset(49% 0.6% 0 0);
+    position: absolute;
+    background: #D86F45;
+}
+.backcircle {
+    width: 60px;
+    height: 60px;
+    background: #F5D6B4;
+    border-radius: 100%;
+    clip-path: inset(45% 0 0 0);
+    position: relative;
+    top: 20%;
+    left: 7.6%;
+}
+.front {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    clip-path: inset(49% 0 0 0);
+    position: absolute;
+    margin-left: 159px;
+    right: 1;
+    z-index: 1;
+    background: #D86F45;
+}
+.frontcircle {
+    width: 60px;
+    height: 60px;
+    background: #F5D6B4;
+    border-radius: 100%;
+    position: relative;
+    clip-path: inset(45% 0 0 0);
+    margin: 0 auto;
+    top: -100%;
+    z-index: 2;
+    left: 30.7%;
+}
+.minilcircle {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: -1;
+    margin-top: -140px;
+    border-radius: 100%;
+    background: #D86F45;
+}
+.minircircle {
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    margin: 0 auto;
+    z-index: 3;
+    position: absolute;
+    margin-top: -140px;
+    border-radius: 100%;
+    background: #D86F45;
 }
